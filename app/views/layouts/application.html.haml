@@ -9,8 +9,9 @@
 %body
   %nav.navbar.navbar-inverse
     .container
-      .navbar-brand= link_to "GameX", root_path
-      
+      %ul.nav.navbar-nav.navbar-left
+        .navbar-brand= link_to "GameX", root_path
+        
       - if user_signed_in?
         %ul.nav.navbar-nav.navbar-left
           %li= link_to "New GameX", new_pic_path
